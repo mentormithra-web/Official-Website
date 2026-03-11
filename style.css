@@ -479,14 +479,20 @@ footer {
     color: #64748b;
 }
 
-.socials i {
-    font-size: 1.2rem;
-    margin-left: 20px;
-    cursor: pointer;
-    transition: var(--transition);
+.socials {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
 }
 
-.socials i:hover { color: white; }
+.socials a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #25D366; /* hover effect */
+}
 
 /* --- Responsive Media Queries --- */
 @media (max-width: 992px) {
@@ -527,4 +533,5 @@ footer {
 @media (max-width: 480px) {
     .footer-container { grid-template-columns: 1fr; }
     .hero h1 { font-size: 2rem; }
+
 }
